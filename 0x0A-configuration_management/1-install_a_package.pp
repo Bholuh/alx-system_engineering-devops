@@ -1,5 +1,5 @@
-# install flask -v 2.1.0
-
-exec { 'flask':
-  command => '/usr/bin/apt-get -y install flask -v 2.1.0',
+# Installs a package
+package { 'puppet-lint':
+  ensure   => '3.0.1',
+  provider => 'gem'
 }
